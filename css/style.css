@@ -229,8 +229,6 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -239,9 +237,6 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    display: block;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 /****** Hebergements ***********/
@@ -250,33 +245,34 @@ a {
 }
 
 .hebergements-cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex:1;
-    width: 100%;
-    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px;
+    flex: 1;
 }
 
 .hebergements-cards .card {
     display: flex;
-    margin-top: 33px;  
+    flex-direction: column;
+    margin-top: 33px; 
+    width:100%;
+    height:200px; 
 }
 
 .hebergements-cards img {
-    width: 33%;
-    height: 136px;
+    width: 100%;
+    height: 124px;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;   
+    border-top-right-radius: 20px;   
+    padding-bottom: 8px;
 }
 
 .hebergements-cards .card-content {
-    width: 67%;
+    width: 100%;
     padding-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .hebergements-cards .card-title {
@@ -287,6 +283,7 @@ a {
 
 .hebergements-cards .card-subtitle {
     margin: 0;
+    padding-bottom: 2px;
 }
 
 .hebergements-cards .card-rating {
@@ -385,26 +382,20 @@ a {
 .footer-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap:100px;
+    margin-top : 150px;
+    padding: 45px 50px 58px 70px ;
 }
 
 .background-footer{
     background-color:var(--main-bg-color);
     box-sizing: border-box;
-    margin-top: 150px;
     width: 100%;
-}
-
-.footer-section{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .footer-cards{
     display: flex;
-    flex-direction: column;
-    margin: 40px 200px 60px 80px ;
-    
+    flex-direction: column;    
 }
 
 .footer-text{
