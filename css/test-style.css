@@ -231,9 +231,12 @@ h4{
 .info-section .lettre-i{
     color: rgba(0,101,252,1);
     border: 2px solid rgba(217,217,217,1);
-    padding: 8px 14px 8px 14px;
+    padding: 8px;
     border-radius : 50%;
     margin-right: 12px;
+    width : 16px;
+    height:14px;
+    text-align: center;
 }
 
 .info-section .phrase{
@@ -248,7 +251,6 @@ h4{
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -257,6 +259,7 @@ h4{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    background-color: var(--main-bg-color);
 }
 
 .hebergements-cards{
@@ -315,6 +318,7 @@ h4{
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    background-color: var(--main-bg-color);
 }
 
 .populaires-title {
@@ -591,12 +595,13 @@ h4{
         flex-direction: column;
         align-items: flex-start;
         padding-left: 20px;
+        width:100%;
     }
 
     .filtres-section .filtres{
         grid-template-columns: repeat(2, 1fr);
     }
-
+   
     .hebergements-and-populaires section {
         border-radius: 0;
     }
@@ -605,6 +610,7 @@ h4{
         order: -1;
         width: 100%;
         margin-top: 0;
+        background-color: #F2F2F2
     }
 
     .populaires-title{
@@ -632,6 +638,13 @@ h4{
         font-size: 15px;
         margin-bottom: 10px;
     }
+
+    .hebergements{
+        background-color: transparent;
+    }
+
+  
+    
 
     
 
