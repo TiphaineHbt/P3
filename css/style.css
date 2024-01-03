@@ -38,6 +38,9 @@ br{
 .section-title {
     margin: 0;
     font-size: 22px;
+}
+
+#activites-Marseille{
     margin-bottom: 33px;
 }
 
@@ -610,7 +613,7 @@ h4{
     }
 
     .barre-recherche{
-        padding-left: 20px;
+        padding-left: 35px;
     }
 
     .button-recherche{
@@ -677,7 +680,7 @@ h4{
     }
 
     .populaires-cards .card{
-        width:300%;
+        width:335%;
         margin-top:0;
     }
 
@@ -727,11 +730,13 @@ h4{
 
    #activites-Marseille{
     max-width: 150px;
+    padding-bottom: 0px;
    }
 
     .activites-section {
         display: grid;
         grid-template-columns: 1fr;
+        margin-top: 0px;
     }
 
     .activites-cards{
@@ -752,7 +757,6 @@ h4{
     }
 
     .footer-section {
-        /*width:100%;*/
         display: grid;
         grid-template-columns: 1fr;
         gap:30px;
