@@ -31,6 +31,10 @@ a {
     text-decoration: none;
 }
 
+br{
+    display: none ;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -391,7 +395,7 @@ h4{
 
 .activites-images{
     width: 100%;
-    aspect-ratio: 0.7;
+    aspect-ratio: 7/10;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -423,7 +427,7 @@ h4{
 }
 
 .footer-text{
-    padding-bottom: 4px;
+    padding-bottom: 15px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -431,6 +435,15 @@ h4{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) { 
+    .main-container {
+        width: 100%;
+        max-width: 1024px;
+        box-sizing: border-box;
+    }
+
+    br{
+        display: block;
+    }
 
     
     .filtres-section{
@@ -532,14 +545,24 @@ h4{
 @media (max-width: 767.98px) {
     body{
         margin:0;
+        padding: 0;
+        width: 100%;
     }
 
     main{
         padding : 0px;
+        margin: 0px;
+        width: 100%;
     }
 
-    .main-container{
-        padding:0;
+    br{
+        display: none;
+    }
+
+    .main-container {
+        width: 100%;
+        max-width: 767.98px;
+        box-sizing: border-box;
     }
 
     .header{
@@ -548,6 +571,7 @@ h4{
         justify-content: space-between;
         align-items: center;
         width:100%;
+        padding-left: 0px;
     }
 
     .bordure{
@@ -698,9 +722,11 @@ h4{
     }
 
    .activites{
-        padding-top: 50px;
-        padding-left:20px ;
-        padding-bottom: 50px;
+        padding: 50px 20px;
+   }
+
+   #activites-Marseille{
+    max-width: 150px;
    }
 
     .activites-section {
@@ -713,6 +739,10 @@ h4{
         height:190px;
     }
 
+    .activites-titres{
+        margin: 15px 6px 6px 15px;
+    }
+
     .activites-images{
         width: 100%;
         height: 135px;
@@ -722,10 +752,15 @@ h4{
     }
 
     .footer-section {
-        width:100%;
+        /*width:100%;*/
         display: grid;
         grid-template-columns: 1fr;
         gap:30px;
+    }
+
+    .background-footer{
+        margin: 0px;
+        width: 100%;
     }
 
   
