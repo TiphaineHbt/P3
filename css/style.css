@@ -562,6 +562,10 @@ h4{
         display: none;
     }
 
+    nav{
+        width : 50%;
+    }
+
     .main-container {
         width: 100%;
         max-width: 767.98px;
@@ -588,20 +592,14 @@ h4{
     }
 
     .bordure{
-        border-bottom:2px transparent solid;
+        border-bottom:2px #F2F2F2 solid;
         padding:48px 20px 20px 20px;
+        text-align: center;
     }
 
     .bordure:hover{
         border-top: 2px transparent solid;;
         border-bottom:2px #0065FC solid;
-    }
-
-    .container{
-        display: flex;
-        flex-direction: column;
-        height:100px;
-        flex-wrap: wrap;
     }
 
     h1{
